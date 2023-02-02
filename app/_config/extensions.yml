@@ -1,0 +1,7 @@
+---
+Name: medion-extensions
+---
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - SiteConfigExtension
