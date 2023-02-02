@@ -1,6 +1,7 @@
 <?php
 
 use SilverStripe\ORM\DataObject;
+use SilverStripe\Versioned\Versioned;
 
 class Contact extends DataObject
 {
@@ -11,4 +12,21 @@ class Contact extends DataObject
         'Medicine' => 'Varchar',
         'Message' => 'Text'
     ];
+
+    private static $has_one = [];
+
+    private static $owns = [];
+
+    private static $extensions = [
+        Versioned::class,
+    ];
+
+    private static $summary_fields = [
+        'Name' => 'Name',
+        'Email' => 'Email',
+        'PhoneNumber' => 'Phone Number',
+        'Medicine' => 'Medicine',
+        'Message' => 'Message',
+    ];
+    
 }
