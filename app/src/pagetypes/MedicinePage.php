@@ -26,7 +26,7 @@ class MedicinePage extends Page
             GridFieldConfig_RecordEditor::create()
         ));
 
-        $fields->addFieldToTab('Root.Vitamins', GridField::create(
+        $fields->addFieldToTab('Root.Cosmetics', GridField::create(
             'Vitamins',
             'Vitamins on this page',
             $this->Vitamins(),

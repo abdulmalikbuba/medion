@@ -6,12 +6,15 @@ use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Versioned\Versioned;
 use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Forms\TextareaField;
 
 class Medicine extends DataObject
 {
     private static $db = [
         'Name' => 'Varchar',
-        'Price' => 'Currency'
+        'Price' => 'Currency',
+        'Description' => 'Varchar',
+        'Contact' => 'Varchar',
     ];
 
     private static $has_one = [
@@ -48,7 +51,9 @@ class Medicine extends DataObject
 
             TextField::create('Name', 'MedicineName'),
             TextField::create('Price','Price'),
-            $uploader = UploadField::create('Image')
+            TextareaField::create('Description','Product Description'),
+            TextField::create('Contact','Contact to call'),
+            $uploader = UploadField::create('Image'),
             
         );
         

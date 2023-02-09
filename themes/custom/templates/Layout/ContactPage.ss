@@ -46,15 +46,9 @@
             </form>
           </div>
         </div>
-        <div class="col-md-7">
-          <div class="detail-box">
-            <h3>
-              Get Now Medicines
-            </h3>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable.
-            </p>
+        <div class="col-md-7 mt-3">
+          <div class=" row">
+          <div class="gmap_canvas"><iframe width="100%" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=rag lineker&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:100%;}</style></div>
           </div>
         </div>
       </div>

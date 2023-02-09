@@ -12,13 +12,12 @@
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$$Price<small class="text-muted fw-light">/unit</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Buy Now</button>
+           
+              <p class"mb-5">$Description</p>
+              <p class"mt-5">$Contact</p>
+           
+            
+           
           </div>
         </div>
       </div>

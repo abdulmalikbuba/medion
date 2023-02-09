@@ -32,20 +32,27 @@
     <% end_with %>
 
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-      <a class="navbar-brand" href="$AbsoluteBaseURL">
-        <img src="$resourceURL('themes/custom/images/logo2.png')" alt="">
-        <%-- <span>
-          Medion
-        </span> --%>
+    <nav class="navbar navbar-expand-lg custom_nav-container pt-3 ">
+      <a class="navbar-brand nav-image" href="$AbsoluteBaseURL">
+        <img src="$resourceURL('themes/custom/images/logo2.png')" alt="" class="site_logo">
+      
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
-          <ul class="navbar-nav">
+        <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-around">
+          
+       <a class="navbar-brand nav-image2" href="$AbsoluteBaseURL">
+        <img src="$resourceURL('themes/custom/images/logo2.png')" alt="" class="site_logo">
+      
+      </a>
+              <div class="login_btn-contanier ml-0 ml-lg-5">
+                
+              </div>
+              <ul class="navbar-nav">
             <% loop $MenuSet('Main').MenuItems %>
             <% if $Children %>
             <li class="nav-item mx-auto">
@@ -67,18 +74,6 @@
             <% end_if %>
             <% end_loop %>
           </ul>
-          <%-- <form class="form-inline ">
-                <input type="search" placeholder="Search">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-              <div class="login_btn-contanier ml-0 ml-lg-5">
-                <a href="">
-                  <img src="images/user.png" alt="">
-                  <span>
-                    Login
-                  </span>
-                </a>
-              </div> --%>
         </div>
       </div>
 
@@ -86,3 +81,7 @@
   </div>
 </header>
 <!-- end header section -->
+
+
+
+

@@ -40,7 +40,7 @@ use SilverStripe\View\ArrayData;
 
             Requirements::css($ThemeDir . 'css/style.css');
             Requirements::css($ThemeDir . 'css/bootstrap.css');
-            Requirements::css($ThemeDir . 'css/responsive.css');
+            // Requirements::css($ThemeDir . 'css/responsive.css');
             Requirements::css($ThemeDir . 'css/style.css.map');
             Requirements::css($ThemeDir . 'css/lightslider.css');
 
@@ -48,6 +48,10 @@ use SilverStripe\View\ArrayData;
             Requirements::css('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
             Requirements::css('https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap');
             Requirements::css('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+            Requirements::css('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+            Requirements::css('https://unpkg.com/aos@2.3.1/dist/aos.css');
+            
+             
 
             Requirements::javascript($ThemeDir . 'javascript/bootstrap.js');
             Requirements::javascript($ThemeDir . 'javascript/script.js');
@@ -56,9 +60,13 @@ use SilverStripe\View\ArrayData;
 
             Requirements::javascript('http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
             Requirements::javascript('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js');
+            Requirements::javascript('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js'); 
+            Requirements::javascript('https://kit.fontawesome.com/54a42e235e.js');
+            Requirements::javascript('https://unpkg.com/aos@2.3.1/dist/aos.js');
 
             Requirements::customScript(<<<JS
-
+            
+                 AOS.init();
                 $(".owl-carousel").owlCarousel({
                     loop: true,
                     margin: 10,
@@ -165,7 +173,7 @@ use SilverStripe\View\ArrayData;
             $subscribe->Email = $email;
 
             $subscribe->write();
-            
+             
             $this->setSessionMessage('Your subscription is successful, Thank you', 'good');
 
             return $this->redirectBack();
